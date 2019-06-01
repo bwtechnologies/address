@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/Boostport/address"
+	"github.com/bwtechnologies/address"
 )
 
 func main() {
