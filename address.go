@@ -30,15 +30,15 @@ type formatData struct {
 
 // Address represents a valid address made up of its child components.
 type Address struct {
-	Country            string
-	Name               string
-	Organization       string
-	StreetAddress      []string
-	DependentLocality  string
-	Locality           string
-	AdministrativeArea string
-	PostCode           string
-	SortingCode        string
+	Country            string   `json:"country"`
+	Name               string   `json:"name"`
+	Organization       string   `json:"organization"`
+	StreetAddress      []string `json:"street_address"`
+	DependentLocality  string   `json:"dependent_locality"`
+	Locality           string   `json:"locality"`
+	AdministrativeArea string   `json:"administrative_area"`
+	PostCode           string   `json:"post_code"`
+	SortingCode        string   `json:"sorting_code"`
 }
 
 func (a Address) toFormatData(countryData country, language string) formatData {

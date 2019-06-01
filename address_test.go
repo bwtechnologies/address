@@ -81,16 +81,14 @@ func TestValidAddresses(t *testing.T) {
 				WithLocality("Cabourg"),
 				WithPostCode("14390"),
 				WithCountry("FR"),
-				WithSortingCode("CEDEX"),
 			},
 			Expected: Address{
 				Country: "FR",
 				StreetAddress: []string{
 					"27 Rue Pasteur",
 				},
-				Locality:    "Cabourg",
-				PostCode:    "14390",
-				SortingCode: "CEDEX",
+				Locality: "Cabourg",
+				PostCode: "14390",
 			},
 		},
 		{
@@ -2367,8 +2365,16 @@ func TestGetCountry(t *testing.T) {
 							Name: "Areum-dong",
 						},
 						{
+							ID:   "보람동",
+							Name: "Boram-dong",
+						},
+						{
 							ID:   "부강면",
 							Name: "Bugang-myeon",
+						},
+						{
+							ID:   "대평동",
+							Name: "Daepyeong-dong",
 						},
 						{
 							ID:   "도담동",
@@ -2377,6 +2383,10 @@ func TestGetCountry(t *testing.T) {
 						{
 							ID:   "금남면",
 							Name: "Geumnam-myeon",
+						},
+						{
+							ID:   "고운동",
+							Name: "Goun-dong",
 						},
 						{
 							ID:   "한솔동",
@@ -2401,6 +2411,14 @@ func TestGetCountry(t *testing.T) {
 						{
 							ID:   "종촌동",
 							Name: "Jongchon-dong",
+						},
+						{
+							ID:   "새롬동",
+							Name: "Saerom-dong",
+						},
+						{
+							ID:   "소담동",
+							Name: "Sodam-dong",
 						},
 						{
 							ID:   "소정면",
@@ -3335,16 +3353,36 @@ func TestGetCountry(t *testing.T) {
 					Name: "세종",
 					Localities: []LocalityData{
 						{
+							ID:   "고운동",
+							Name: "고운동",
+						},
+						{
 							ID:   "금남면",
 							Name: "금남면",
+						},
+						{
+							ID:   "대평동",
+							Name: "대평동",
 						},
 						{
 							ID:   "도담동",
 							Name: "도담동",
 						},
 						{
+							ID:   "보람동",
+							Name: "보람동",
+						},
+						{
 							ID:   "부강면",
 							Name: "부강면",
+						},
+						{
+							ID:   "새롬동",
+							Name: "새롬동",
+						},
+						{
+							ID:   "소담동",
+							Name: "소담동",
 						},
 						{
 							ID:   "소정면",
